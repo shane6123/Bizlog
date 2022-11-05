@@ -1,0 +1,19 @@
+<%- include('../partials/header') -%>
+<section id="create">
+  <div class="create">
+    <h1 class="blog-heading">Create Blog</h1>
+    <hr class="line">
+    <form action="/compose" method="post">
+      <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"><h3>Title</h3></label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="title" value="">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"><h3>Description</h3></label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" name="description" value="" rows="5"></textarea>
+        </div>
+        <input type="submit" value="Publish" class="btn btn-dark">
+      </form>
+  </div>
+</section>
+<%- include('../partials/footer') -%>

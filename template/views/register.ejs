@@ -1,0 +1,21 @@
+<%- include('../partials/header') -%>
+  <secction id="signup">
+    <div class="sign shadow-lg p-3 mb-5 bg-body ">
+      <form action="/register" method="post">
+        <h2 class="m-3 mb-4">Register for Bizlog</h2>
+        <!-- <input type="text" class="form-control m-2" placeholder="Name" name="name" value=""> -->
+        <!-- <input type="text" class="form-control m-2" placeholder="Username" name="username" value=""> -->
+        <input type="email" class="form-control m-2" placeholder="Email" name="username" value="">
+        <!-- <input type="text" class="form-control m-2" placeholder="Moblie" name="mobile" value=""> -->
+        <input type="password" class="form-control m-2" placeholder="Password" name="password" value="">
+        <!-- <input type="text" class="form-control m-2" placeholder="Confirm Password" name="" value=""> -->
+        <p>if you are already register, then <a href="/login">login</a></p>
+        <input type="submit" class="btn btn-dark" value="Register">
+        <hr>
+        <a href="/auth/google"><img class="img-sign m-2" src="/images/google.png" alt=""></a>
+        <a href="#"><img class="img-sign m-2" src="/images/facebook.png" alt=""></a>
+        <a href="#"><img class="img-sign m-2" src="/images/linkedin.png" alt=""></a>
+      </form>
+    </div>
+  </secction>
+  <%- include('../partials/footer') -%>

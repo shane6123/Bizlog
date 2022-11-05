@@ -1,0 +1,88 @@
+#main{
+    margin: 0 10%;
+    /* background-color: aqua; */
+}
+
+.hmain{
+    font-size: 4.5rem;
+}
+.pmain{
+    font-size: 1.5rem;
+}
+.block{
+    padding: 10%;
+}
+.footer{
+    text-align: center;
+    color: white;
+
+}
+#signup{
+    text-align: center;
+}
+    
+.sign{
+    width: 25%;
+    margin: 8% auto;
+    color: black;
+    border-radius: 25px;
+    padding: 3%;
+}
+
+.img-sign{
+    width: 12%;
+
+}
+.blog-heading{
+    text-align: center;
+    
+}
+.line{
+    width: 15%;
+    margin: 0 auto 3%;
+    border-bottom: 3px solid black;
+
+
+    
+    
+}
+
+.create{
+    width: 50%;
+    margin: 5% auto;
+    /* text-align: center; */
+
+}
+
+
+.blogs{
+    width: 70%;
+    margin: 2% auto;
+
+}
+.blog{
+    text-align: left;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 2%;
+    margin: 2%;
+
+}
+.date{
+    display: inline;
+    
+}
+.like{
+    margin: 1% 1.5%;
+}
+.footer{
+    text-align: center;
+    color: black;
+
+    padding: 2% 0 0.2%;
+    
+}
+.error{
+    margin: 5% auto ;
+    text-align: center;
+}

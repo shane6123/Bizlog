@@ -1,0 +1,78 @@
+<%- include('../partials/header') -%>
+  <section id="header">
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark pe-5 ps-5 ">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#"><i class="fa-solid fa-blog"></i> <b><em> Bizlog</em></b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item m-2">
+              <a class="nav-link active" aria-current="page" href="/data">Our stories</a>
+            </li>
+            <li class="nav-item m-2">
+              <a class="nav-link active" href="">Features</a>
+            </li>
+            <!-- <li class="nav-item m-2 me-4">
+              <a class="nav-link active" href="#">Hello , Shane </a>
+            </li> -->
+            <li class="nav-item m-2 me-4">
+              <a href="/compose"><button class="btn btn-light">Create Post</button></a>
+             </li>
+            <li class="nav-item m-2 me-4">
+             <a href="/logout"><button class="btn btn-light">logout</button></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <section id="blogs">
+    <div class="blogs">
+      <h1 class="blog-heading">Daily Blogs</h1>
+      <hr class="line">
+      <% contents.forEach((content)=>{ %>
+        <div class="blog">
+          <h2 class="d-inline ms-1"> <i><b>
+                <%= content.title %>
+              </b></i> </h2>
+          <span class="float-end"><em>
+              <%= content.date %>
+            </em> </span>
+          <!-- <span class="float-end"> <em>shane. , </em> </span> -->
+
+          <h6>
+            <%= content.description %>
+          </h6>
+          <span class="like"><img id="like" onclick="mylike()" src="images/like1.png" alt="">  </span>
+          <span class="like"> <img src="images/chat.png" alt="">  </span>
+          <span class="float-end m-2">
+            <form action="/delete" method="post">
+              <button type="submit" class="btn btn-dark" name="del" value="<%= content.title %>">DEL</button>
+
+            </form>
+          </span>
+          <span class="float-end m-2">
+            <form action="/update" method="post">
+              <button type="submit" class="btn btn-light" name="edit" value="<%= content.title %>">Edit</button>
+            </form>
+          </span>
+        </div>
+        <% }) %>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="footer bg-light">
+      <h5>Keep in Touch</h5>
+      <a href=""><img class="m-2" src="images/linkedin-logo.png" alt=""></a>
+      <a href=""><img class="m-2" src="images/instagram1.png" alt=""></a>
+      <a href=""><img class="m-2" src="images/facebook1.png" alt=""></a>
+      <a href=""><img class="m-2" src="images/github.png" alt=""></a>
+      <p>copy right @2022</p>
+    </div>
+    </div>
+  </section>
+
+  <%- include('../partials/footer') -%>
